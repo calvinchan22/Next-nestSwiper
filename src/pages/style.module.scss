@@ -1,0 +1,134 @@
+@import '@/src/styles/mixins.scss';
+
+.main {
+  width: 100%;
+  height: 100vh;
+
+  .page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .video1Wrap {
+      width: 14.4rem;
+      height: 6rem;
+
+      .video1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .page2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+
+    .page2TextWrap {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1.5rem;
+      text-align: center;
+      z-index: 22;
+
+      .page2h3 {
+        font-size: 0.48rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        color: #FFFFFF;
+        margin: 0;
+      }
+
+      .page2p {
+        font-size: 0.16rem;
+        font-weight: normal;
+        letter-spacing: 0.14rem;
+        margin: 0;
+        color: #FFFFFF;
+        margin-top: 0.14rem;
+      }
+    }
+
+    .page2ImgWrap {
+      width: 100%;
+      height: 100%;
+
+      .album {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 3.5rem;
+        width: 6.2rem;
+        height: 4rem;
+        border-radius: 8px;
+      }
+    }
+
+    .page2BtnGroup {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      bottom: 0.8rem;
+      z-index: 24;
+
+      .page2BtnItem {
+        width: 1.2rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 0.19rem;
+        font-size: 0.16rem;
+        background-color: '';
+        font-weight: normal;
+        text-align: center;
+        letter-spacing: 0.04rem;
+        color: #FFFFFF;
+        transition: all 0.3s ease;
+
+        &:not(:last-child) {
+          margin-right: 0.42rem;
+
+          @include mobile {
+            margin-right: 0.24rem;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: linear-gradient(180deg, #FF834D 0%, #FCD377 100%);
+          border-color: #FF834D !important;
+        }
+
+        &:active {
+          background: #FF834D !important;
+        }
+      }
+    }
+  }
+
+  .page3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+
+    .page3Img {
+      width: 6rem;
+      height: 4rem;
+      border-radius: 8px;
+    }
+  }
+}

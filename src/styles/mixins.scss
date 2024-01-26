@@ -1,0 +1,23 @@
+@mixin flex($h: center, $v: center) {
+  display: flex;
+  justify-content: $h;
+  align-items: $v;
+}
+
+@mixin omit() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin pc {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}

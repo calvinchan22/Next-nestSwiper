@@ -1,0 +1,38 @@
+.hardWareShowCard {
+    width: 100%;
+    height: 100%;
+
+    .hardWareShowCardTop {
+        width: 100%;
+
+        .hardWareShowCardBg {
+            width: 100%;
+            height: 2.32rem;
+            transition: all 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .hardWareShowCardBottom {
+        margin-top: 0.24rem;
+
+        .hardWareShowCardTitle {
+            font-size: 0.24rem;
+            font-weight: 600;
+            line-height: 0.24rem;
+            letter-spacing: 0em;
+            color: #000000;
+        }
+
+        .hardWareShowCardDesc {
+            display: inline-block;
+            font-size: 0.16rem;
+            letter-spacing: 0em;
+            color: rgba(0, 0, 0, 0.6);
+            margin-top: 0.16rem;
+        }
+    }
+}

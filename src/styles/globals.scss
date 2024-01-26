@@ -1,0 +1,59 @@
+@import '@/src/styles/mixins.scss';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    @include pc {
+        font-size: calc((100vw / 1920px) * 100px);
+    }
+
+    @include mobile {
+        font-size: calc((100vw / 750px) * 100px);
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-scrollbar {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .1);
+}
+
+.swiper-scrollbar-drag {
+    background: #a4a8b2 !important;
+}
+
+body {
+    font-size: 0.14rem;
+    position: relative;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pc {
+    @media screen and (max-width: 1024px) {
+        display: none !important;
+    }
+}
+
+.mobile {
+    @media screen and (min-width: 1025px) {
+        display: none !important;
+    }
+}
